@@ -1,0 +1,6 @@
+<h1> <%=@task.title%> </h1>
+<h2> <%=@task.details%></h2>
+<h3> <%=@task.completed%></h3>
+<h4> <%=link_to('return to index', "/tasks") %>
+<h5> <%=link_to('delete this task', delete_task_path(@task), method: :delete) %> </h5>
+<h6> <%= link_to('edit this task', "#{@task.id}/edit") %> </h6>

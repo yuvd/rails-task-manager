@@ -1,0 +1,5 @@
+<% @task.each do |task| %>
+  <h1> <%=link_to(task.title, "/tasks/#{task.id}")%> </h1>
+  <h2> <%= task.details %> </h2>
+  <h3> <%= task.completed%> </h3>
+<% end %>
